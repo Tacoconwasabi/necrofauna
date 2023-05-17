@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7vh;
+}
+body{
+    background: whitesmoke;
+}
+
+#qr{
+    position:absolute;
+    height: 85px;
+    width: auto;
+    margin: 7.5px;
+}
+
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 10vh;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+font-size: 2.5vh;
+}
+
+main {
+    box-sizing: border-box;
+    display: block;
+    background: #f2f2f2;
+    align-items: center;
+}
+
+nav {
+    display:flex;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #4D774E;
+    padding: 1.5vh;
+}
+
+#actual{
+    margin: 0 10px;
+    padding: .8vh;
+    text-decoration: none;
+    background: whitesmoke;
+    color: #333;
+    border-radius: .5vh;
+
+}
+
+nav a {
+    margin: 0 10px;
+    padding: .8vh;
+    text-decoration: none;
+    color: #333;
+    border-radius: .5vh;
+}
+
+nav a:first-child {
+    margin-left: 5vh;
+}
+
+nav a:last-child {
+    margin-right: 5vh;
+}
+
+nav a:hover {
+    background: #698B69;
+    box-shadow: 5px 5px #3c503c;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+
+header {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-size-adjust: 20vh;
+    background: #698B69;
+}
+
+.concepto {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    
+}
+
+#temas{
+    width: auto;
+    height: auto;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+
+.imagen{
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin-left: .5vh;
+}
+
+
+
+
+
+/*--------------------footer-----------------*/
+footer {
+    background-color: #292929;
+    color: #d9d9d9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.social-media li {
+    margin-bottom: 5px;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    color: #6bacf1;
+}
+
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+/*------------------------------------------@media-------------------------------------------*/
+/* Estilos para resoluciones mayores a 768px */
+@media (min-width: 768px) {
+   
+
+    h1 {
+        font-size: 8vh;
+    }
+
+    h2 {
+        font-size: 2.1vh;
+    }
+
+    p{
+        font: size 1.8vh ;
+        
+}
+
+
+
+}
+
+/* Estilos para resoluciones mayores a 1200px */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 8vh;
+    }
+
+    h2 {
+        font-size: 2vh;
+    }
+
+    nav a:first-child {
+        margin-left: 10vh;
+    }
+
+    nav a:last-child {
+        margin-right: 10vh;
+    }
+
+    p{
+font-size: 1.7vh;
+    }
+
+}
+/* Estilos para resoluciones menores a 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 7vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+    p{
+        font-size:2vh ;
+    }
+
+    #qr{width: 0;}
+
+    .concepto{
+        display: block;
+    }
+}
+
+/* Estilos para resoluciones menores a 320px */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 6vh;
+    }
+
+    h2 {
+        font-size: 2.5vh;
+    }
+
+    p{
+        font-size: 1.5vh;
+    }
+
+    #qr{width: 0;}
+
+    .concepto{
+        display: block;
+    }
+}
